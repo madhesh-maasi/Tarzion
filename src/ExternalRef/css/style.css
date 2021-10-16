@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* TODOworkbench */
+#workbenchPageContent {
+  max-width: 100%;
+}
+
+.ControlZone--emphasisBackground,
+.CanvasZoneContainer {
+  background-color: transparent !important;
+}
+
+.content_3f3fd3c2,
+.CanvasZone {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+.ToolbarButtonTooltip {
+  display: none;
+}
+
+.Canvas {
+  margin: 0 !important;
+}
+/* TODOworkbench */
+.section {
+  display: flex;
+  justify-content: center;
+}
+.left {
+  width: 300px;
+}
+.right {
+  padding: 20px;
+  width: 600px;
+  background: #86b6ec;
+}
+ul#titleList {
+  list-style: none;
+  /* position: relative; */
+}
+ul#titleList li {
+  margin-right: 20px;
+
+  padding: 10px;
+  background: #86b6ec;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+ul#titleList li:not(:last-child) {
+  margin-bottom: 30px;
+}
+ul#titleList li.active {
+  margin-right: 0;
+  padding-right: 30px;
+}
+/* ul#titleList .listTitle:not(:last-child)::after {
+  background: inherit;
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 30px;
+  left: 44%;
+} */
+/* ul#titleList .listTitle:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 42px;
+  right: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #86b6ec;
+} */
+/* ul#titleList .listTitle.active:not(:last-child):after {
+  left: calc(44% - 8px);
+} */
+
+/* ul#titleList .listTitle.active:not(:last-child):before {
+  right: 53%;
+}
+ul#titleList .listTitle::before:last-child {
+  display: none;
+} */
+.arrow:not(:last-child) {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  /* background: red; */
+  position: absolute;
+  top: 40px;
+  /* left: 42%; */
+  right: 151px;
+}
+.title-container:last-child .arrow {
+  display: none;
+}
+.title-container {
+  position: relative;
+}
+.title-container:not(:last-child) {
+  margin-bottom: 20px;
+}
+.title-container:not(:last-child) .listTitle::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+  top: 34px;
+  right: 136px;
+
+  position: absolute;
+}
+.title-container:not(:last-child) .listTitle.active::after {
+  right: 156px;
+}
+.listTitle::after:last-child {
+  display: none;
+  opacity: 0;
+}
+.listTitle {
+  cursor: pointer;
+}
+.right a {
+  color: #000;
+  text-decoration: none;
+}
+.right ul {
+  list-style: none;
+  background: #fff;
+  height: 100%;
+  padding: 20px;
+}
+.right ul li {
+  margin-left: 20px;
+}
